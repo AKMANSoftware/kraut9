@@ -1,0 +1,12 @@
+@tailwind base;
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans';
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+.font-inter {
+  font-family: 'Inter';
+}
