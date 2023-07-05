@@ -20,7 +20,7 @@ export default function CollectionPage() {
             <div className="py-[50px]">
                 <NftPostComponent
                     mediaVariant="video"
-                    src={'src/assets/images/mixkit-a-man-with-a-rainbow-flag-1349-medium.mp4'}
+                    src={'/images/mixkit-a-man-with-a-rainbow-flag-1349-medium.mp4'}
                     heading="Mini Robots"
                     content={
                         <>
@@ -49,7 +49,7 @@ export default function CollectionPage() {
                 {/* Render CollectionComponent */}
                 <NftPostComponent
                     mediaVariant="image"
-                    src={'src/assets/images/blackimage-for-componentpage.svg'}
+                    src={'/images/blackimage-for-componentpage.svg'}
                     heading="Collection Name"
                     content={
                         <>
@@ -70,7 +70,7 @@ export default function CollectionPage() {
                 {/* Render CollectionComponent */}
                 <NftPostComponent
                     mediaVariant="image"
-                    src={'src/assets/images/blackimage-for-componentpage.svg'}
+                    src={'/images/blackimage-for-componentpage.svg'}
                     heading="Collection Name"
                     content={
                         <>

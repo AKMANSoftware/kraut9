@@ -20,7 +20,7 @@ export default function UseCasesPage() {
                 <NftPostComponent
                     mediaVariant="image"
                     className="border !border-tersioary"
-                    src={'src/assets/images/gas_station.svg'}
+                    src={'/images/gas_station.svg'}
                     heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                     content=''
                     button={
@@ -32,7 +32,7 @@ export default function UseCasesPage() {
                 <NftPostComponent
                     mediaVariant="image"
                     className="border !border-tersioary"
-                    src={'src/assets/images/house.svg'}
+                    src={'/images/house.svg'}
                     heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                     content=''
                     button={
@@ -44,7 +44,7 @@ export default function UseCasesPage() {
                 <NftPostComponent
                     mediaVariant="image"
                     className="border !border-tersioary"
-                    src={'src/assets/images/car.svg'}
+                    src={'/images/car.svg'}
                     heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                     content=''
                     button={
@@ -56,7 +56,7 @@ export default function UseCasesPage() {
                 <NftPostComponent
                     mediaVariant="image"
                     className="border !border-tersioary"
-                    src={'src/assets/images/man.svg'}
+                    src={'/images/man.svg'}
                     heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                     content=''
                     button={

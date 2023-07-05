@@ -21,7 +21,7 @@ export default function Homepage() {
                     </div>
                 </div>
                 <div className='md:w-auto flex justify-center w-[343px] md:mx-0 mx-4 lg:py-0 py-12'>
-                    <img src="src\assets\images\logolg.png" width={480} height={480} alt="" />
+                    <img src="/images/logolg.png" width={480} height={480} alt="" />
                 </div>
             </section>
             <section className='md:flex w-full lg:py-[180px] py-3 justify-between md:mx-0 mx-4'>
@@ -45,7 +45,7 @@ export default function Homepage() {
             <section className="lg:flex gap-x-5 md:mx-0 mx-4">
                 <div className="flex flex-col lg:w-1/2 space-y-5">
                     <ServicesComponent
-                        img={'src/assets/images/futureofloyalty.png'}
+                        img={'/images/futureofloyalty.png'}
                         heading="The future of loyalty programs"
                         content={
                             <>
@@ -59,7 +59,7 @@ export default function Homepage() {
                         }
                     />
                     <ServicesComponent
-                        img={'src/assets/images/revenue services.svg'}
+                        img={'/images/revenue services.svg'}
                         heading="The future of revenue streams"
                         content={
                             <>
@@ -70,7 +70,7 @@ export default function Homepage() {
                         }
                     />
                     <ServicesComponent
-                        img={'src/assets/images/customervalue.svg'}
+                        img={'/images/customervalue.svg'}
                         heading="The future of customer life time value"
                         content={
                             <>
@@ -83,7 +83,7 @@ export default function Homepage() {
                 </div>
                 <div className="flex flex-col space-y-5 lg:w-1/2 lg:pt-0 pt-5">
                         <ServicesComponent
-                            img={'src/assets/images/authencity services.svg'}
+                            img={'/images/authencity services.svg'}
                             heading="The future of authenticity proofs"
                             content={
                                 <>
@@ -94,7 +94,7 @@ export default function Homepage() {
                             }
                         />
                         <ServicesComponent
-                            img={'src/assets/images/brand services.svg'}
+                            img={'/images/brand services.svg'}
                             heading="The future of brand authority"
                             content={
                                 <>
@@ -104,7 +104,7 @@ export default function Homepage() {
                                 </>}
                         />
                         <ServicesComponent
-                            img={'src/assets/images/makemoneyartist services.svg'}
+                            img={'/images/makemoneyartist services.svg'}
                             heading="The future of making money as visual artist"
                             content={
                                 <>

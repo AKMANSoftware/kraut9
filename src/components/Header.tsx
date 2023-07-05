@@ -23,7 +23,7 @@ export default function Header() {
             </div>
             <div>
                 <a href="">
-                    <img src="src\assets\images\logosm.png" className="w-[170px] h-[105px]" />
+                    <img src="/images/logosm.png" className="w-[170px] h-[105px]" />
                 </a>
             </div>
             <div className="flex  items-center">
@@ -34,7 +34,7 @@ export default function Header() {
 
         </header>
 
-    
+
 
 
     )

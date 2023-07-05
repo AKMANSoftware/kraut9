@@ -4,7 +4,7 @@ export default function Footer() {
 
         <footer className="xl:mx-auto mx-2  max-w-screen-xl  bg-white md:py-16">
             <div className="flex items-center justify-center md:w-full">
-                <img src="src\assets\images\footerlogo.png" width={286} height={183} />
+                <img src="/images/footerlogo.png" width={286} height={183} />
             </div>
             <div className="md:flex justify-between text-secondary py-4 md:mx-0 mx-4">
                 <div className="md:hidden flex text-black font-normal text-base justify-between items-center md:pr-14 md:py-0 pt-4">
@@ -20,13 +20,13 @@ export default function Footer() {
                 </div>
                 <div className="flex md:gap-x-3 justify-evenly md:py-0 py-10">
                     <SecondaryButton className="">
-                        <img src="src\assets\images\facebooklogo.svg" className="px-[5px]" />
+                        <img src="/images/facebooklogo.svg" className="px-[5px]" />
                     </SecondaryButton>
                     <SecondaryButton className="">
-                        <img src="src\assets\images\twitterlogo.svg" className="" alt="" />
+                        <img src="/images/twitterlogo.svg" className="" alt="" />
                     </SecondaryButton>
                     <SecondaryButton className="">
-                        <img src="src\assets\images\instalogo.svg" className="" alt="" />
+                        <img src="/images/instalogo.svg" className="" alt="" />
                     </SecondaryButton>
                 </div>
                 <div className="md:flex hidden text-black font-normal text-base gap-x-10 items-center pr-14">

@@ -36,7 +36,7 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                     // play button
                     mediaVariant === "video" &&
                     <button className="bg-secondary rounded-full p-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <img src="src\assets\images\playbutton.svg" width={24} height={24} className="" />
+                        <img src="/images/playbutton.svg" width={24} height={24} className="" />
                     </button>
                 }
             </div>
