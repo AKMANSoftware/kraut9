@@ -11,6 +11,7 @@ content: [
        primary: '#28C6F3',
        secondary:'#27282A',
        tersioary:'#FDCB2A',
+       tersioarysolid:'#FFCB00',
        halfSecondary:'#27282A80'
       }
     },

@@ -19,7 +19,7 @@ export default function CollectionPage() {
 
                 {/* First collection div */}
                 {/* Render CollectionComponent */}
-                <div className="py-[50px]">
+                <div className="md:py-[50px] py-[30px]">
                     <NftPostComponent
                         mediaVariant="video"
                         src={'/images/mixkit-a-man-with-a-rainbow-flag-1349-medium.mp4'}
@@ -42,7 +42,7 @@ export default function CollectionPage() {
 
 
                 {/* Heading for upcoming collections */}
-                <div className="text-2xl font-extrabold text-secondary py-[30px] flex items-center justify-center">
+                <div className="md:text-2xl text-base font-extrabold text-secondary md:py-[30px] py-5 flex items-center justify-center">
                     Upcoming Collections
                 </div>
                 <div className="space-y-[30px]">

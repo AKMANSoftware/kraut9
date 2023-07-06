@@ -1,5 +1,9 @@
 import { PrimaryButton, SecondaryButton } from "./Buttons";
+import { cn } from "../lib/utils";
+import { useLocation } from "react-router-dom";
+
 export default function Footer() {
+    const { pathname } = useLocation()
     return (
 
         <footer className="xl:mx-auto mx-2  max-w-screen-xl  bg-white md:py-16">
@@ -8,13 +12,26 @@ export default function Footer() {
             </div>
             <div className="md:flex justify-between text-secondary py-4 md:mx-0 mx-4">
                 <div className="md:hidden flex text-black font-normal text-base justify-between items-center md:pr-14 md:py-0 pt-4">
-                    <a href="http://localhost:5173/CollectionPage">
+                    <a
+                        href="/collections"
+                        className={cn(
+                            pathname === "/collections" && "text-primary",
+                            "hover:text-primary"
+                        )}
+                    >
                         Collections
                     </a>
-                    <a href="http://localhost:5173/UseCases">
+
+                    <a href="/use-cases" className={cn(
+                        pathname === "/use-cases" && "text-primary",
+                        "hover:text-primary"
+                    )}>
                         Use Cases
                     </a>
-                    <a href="">
+                    <a href="/team" className={cn(
+                        pathname === "/team" && "text-primary",
+                        "hover:text-primary"
+                    )}>
                         Team
                     </a>
                 </div>
@@ -30,13 +47,26 @@ export default function Footer() {
                     </SecondaryButton>
                 </div>
                 <div className="md:flex hidden text-black font-normal text-base gap-x-10 items-center pr-14">
-                    <a href="">
+                    <a
+                        href="/collections"
+                        className={cn(
+                            pathname === "/collections" && "text-primary",
+                            "hover:text-primary"
+                        )}
+                    >
                         Collections
                     </a>
-                    <a href="">
+
+                    <a href="/use-cases" className={cn(
+                        pathname === "/use-cases" && "text-primary",
+                        "hover:text-primary"
+                    )}>
                         Use Cases
                     </a>
-                    <a href="">
+                    <a href="/team" className={cn(
+                        pathname === "/team" && "text-primary",
+                        "hover:text-primary"
+                    )}>
                         Team
                     </a>
                 </div>

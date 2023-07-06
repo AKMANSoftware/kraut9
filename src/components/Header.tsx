@@ -4,27 +4,38 @@ import { PrimaryButton } from "./Buttons";
 import { cn } from "../lib/utils";
 // Header Compponent
 export default function Header() {
-    // const { pathname } = useLocation()
+    const { pathname } = useLocation()
     return (
 
         <header className="xl:mx-auto md:px-2 px-4 flex  justify-between align-middle max-w-screen-xl sticky py-5 top-0 bg-white z-50">
-            <div className="md:flex hidden text-black font-normal navbar text-base lg:gap-x-10 md:gap-x-2 items-center ">
-                <a href="/collections" className={cn(
-                    // pathname === "/collections" && "text-primary"
-                )}>
-                    Collections
-                </a>
-                <a href="/use-cases">
-                    Use Cases
-                </a>
-                <a href="">
-                    Team
-                </a>
-            </div>
             <div className="md:hidden flex">
-                <button className="" id="activateButton">
+                <button>
                     <i className="fas fa-bars w-6 aspect-square h-auto"></i>
                 </button>
+            </div>
+            <div className="md:flex hidden text-black font-normal navbar text-base lg:gap-x-10 md:gap-x-2 items-center">
+                <a
+                    href="/collections"
+                    className={cn(
+                        pathname === "/collections" && "text-primary",
+                        "hover:text-primary"
+                    )}
+                >
+                    Collections
+                </a>
+
+                <a href="/use-cases" className={cn(
+                    pathname === "/use-cases" && "text-primary",
+                    "hover:text-primary"
+                )}>
+                    Use Cases
+                </a>
+                <a href="/team" className={cn(
+                    pathname === "/team" && "text-primary",
+                    "hover:text-primary"
+                )}>
+                    Team
+                </a>
             </div>
             <div>
                 <a href="">
