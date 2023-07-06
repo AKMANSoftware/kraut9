@@ -12,7 +12,8 @@ content: [
        secondary:'#27282A',
        tersioary:'#FDCB2A',
        tersioarysolid:'#FFCB00',
-       halfSecondary:'#27282A80'
+       halfSecondary:'#27282A80',
+       lightwhite:'#c5e5f0'
       }
     },
   },

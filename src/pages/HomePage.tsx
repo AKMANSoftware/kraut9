@@ -23,7 +23,7 @@ export default function Homepage() {
                         </div>
                     </div>
                     <div className='md:w-auto flex justify-center w-[343px] md:mx-0 mx-4 lg:py-0 py-12'>
-                        <img src="/images/logolg.png" width={480} height={480} alt="" />
+                        <img src="/images/logo_lg.svg" width={480} height={480} alt="" />
                     </div>
                 </section>
                 <section className='md:flex w-full lg:py-[180px] py-3 justify-between md:mx-0 mx-4'>
@@ -47,7 +47,7 @@ export default function Homepage() {
                 <section className="lg:flex gap-x-5 md:mx-0 mx-4">
                     <div className="flex flex-col lg:w-1/2 space-y-5">
                         <ServicesComponent
-                            img={'/images/futureofloyalty.png'}
+                            img={'/images/futureofloyalty.svg'}
                             heading="The future of loyalty programs"
                             content={
                                 <>

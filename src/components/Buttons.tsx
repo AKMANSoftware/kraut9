@@ -15,8 +15,8 @@ export function PrimaryButton({ children, className, variant = "default" }: Prim
   return (
     <button type="button" className={cn(
       "transition md:text-base text-sm text-center justify-center rounded-full font-extrabold px-10 py-4 w-full lg:w-auto",
-      variant === "transparent-on-mobile" ? "md:bg-gradient-to-r md:hover:bg-gradient-to-l from-blue-200 from-5% to-100% to-primary text-primary md:text-white"
-        : "bg-gradient-to-r hover:bg-gradient-to-l from-blue-200 from-5% to-100% to-primary text-white",
+      variant === "transparent-on-mobile" ? "md:bg-gradient-to-r md:hover:bg-gradient-to-l from-lightwhite from-5% to-100% to-primary text-primary md:text-white"
+        : "bg-gradient-to-r hover:bg-gradient-to-l from-lightwhite from-5% to-100% to-primary text-white",
       className
     )}>
       {children}
@@ -35,7 +35,7 @@ type SecondaryBtnProps = {
 // SecondaryButton component
 export function SecondaryButton({ children, className }: SecondaryBtnProps) {
   return (
-    <button className={"text-base text-center justify-center rounded-full font-extrabold text-white bg-gradient-to-r hover:bg-gradient-to-l from-blue-300 from-1% to-100%  bg-primary p-4 transition-all" + className}>
+    <button className={"text-base text-center justify-center rounded-full font-extrabold text-white bg-gradient-to-r hover:bg-gradient-to-l from-lightwhite/70 from-5% to-100%  bg-primary p-4 transition-all" + className}>
       {children}
     </button>
   );

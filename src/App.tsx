@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+// import all pages here
 import HomePage from "./pages/HomePage"
 import CollectionPage from "./pages/CollectionPage"
 import UseCasesPage from "./pages/UseCasesPage"
@@ -11,27 +12,22 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />
-
   },
   {
     path:'/collections',
     element:<CollectionPage />
-
   },
   {
     path:'/use-cases',
     element:<UseCasesPage />
-
   },
   {
     path:'/team',
     element:<OurTeamPage />
-
   },
   {
     path:'/use-casesdetail',
     element:<UseCaseDetailPage  />
-
   }
 ])
 function App() {

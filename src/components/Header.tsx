@@ -4,16 +4,16 @@ import { PrimaryButton } from "./Buttons";
 import { cn } from "../lib/utils";
 // Header Compponent
 export default function Header() {
+    //pathname variable is declared and set it's property so  when a page is open it's relative name will be in primary color
     const { pathname } = useLocation()
     return (
-
-        <header className="xl:mx-auto md:px-2 px-4 flex  justify-between align-middle max-w-screen-xl sticky py-5 top-0 bg-white z-50">
-            <div className="md:hidden flex">
+        <header className="xl:mx-auto md:px-2 px-4 flex justify-between align-middle max-w-screen-xl sticky py-5 top-0 bg-white z-50">
+            <div className="lg:hidden flex items-center md:w-auto w-[70px]">
                 <button>
-                    <i className="fas fa-bars w-6 aspect-square h-auto"></i>
+                    <img src="/icons/bar_menue.svg" />
                 </button>
             </div>
-            <div className="md:flex hidden text-black font-normal navbar text-base lg:gap-x-10 md:gap-x-2 items-center">
+            <div className="lg:flex hidden text-black font-normal navbar text-base lg:gap-x-10 md:gap-x-2 items-center">
                 <a
                     href="/collections"
                     className={cn(
@@ -37,9 +37,9 @@ export default function Header() {
                     Team
                 </a>
             </div>
-            <div>
-                <a href="">
-                    <img src="/images/logosm.png" className="w-[170px] h-[105px]" />
+            <div >
+                <a href="" >
+                    <img src="/images/logo_sm.svg" className="md:w-[170px] md:h-[105px] w-[129px] h-[80px]" />
                 </a>
             </div>
             <div className="flex  items-center">
