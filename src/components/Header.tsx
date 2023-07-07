@@ -38,7 +38,7 @@ export default function Header() {
                 </a>
             </div>
             <div >
-                <a href="" >
+                <a href="/" >
                     <img src="/images/logo_sm.svg" className="md:w-[170px] md:h-[105px] w-[129px] h-[80px]" />
                 </a>
             </div>

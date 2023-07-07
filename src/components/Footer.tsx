@@ -8,7 +8,9 @@ export default function Footer() {
 
         <footer className="xl:mx-auto mx-2  max-w-screen-xl  bg-white md:py-16">
             <div className="flex items-center justify-center md:w-full">
-                <img src="/images/footerlogo.svg" width={286} height={183} />
+                <a href="/">
+                    <img src="/images/footerlogo.svg" width={286} height={183} />
+                </a>
             </div>
             <div className="md:flex justify-between text-secondary py-4 md:mx-0 mx-4">
                 <div className="md:hidden flex text-black font-normal text-base justify-between items-center md:pr-14 md:py-0 pt-4">
