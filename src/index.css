@@ -10,3 +10,8 @@
 .font-inter {
   font-family: 'Inter';
 }
+.mint_background{
+  background-image: url(/images/mintpage_background.svg);
+  height: 873px;
+}
+

@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 export default function UseCasesPage() {
     return (
         <Layout>
-
+            {/*manualy  create first div and use flex-row property to asjust it according to figma */}
             <div className="max-w-screen-xl lg:mx-auto mx-4">
                 <div className="md:flex justify-between md:py-[30px] py-[10px]">
                     <div className="md:text-[52px] text-[32px] font-extrabold text-secondary">
@@ -20,6 +20,7 @@ export default function UseCasesPage() {
                         </p>
                     </div>
                 </div>
+                {/* Use of Nftpostcomponent */}
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
                     <NftPostComponent
                         mediaVariant="image"
@@ -70,7 +71,6 @@ export default function UseCasesPage() {
                         }
                     />
                 </div>
-
             </div>
         </Layout>
     )
