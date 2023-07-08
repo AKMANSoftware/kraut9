@@ -29,10 +29,14 @@ export default function UseCasesPage() {
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                         content=''
                         button={
-                            <PrimaryButton className="w-auto">
-                                READ USE CASE
-                            </PrimaryButton>
+                            <a href="/use-casesdetail">
+                                <PrimaryButton className="w-auto">
+                                    READ USE CASE
+                                </PrimaryButton>
+                            </a>
                         }
+
+
                     />
                     <NftPostComponent
                         mediaVariant="image"
@@ -41,9 +45,11 @@ export default function UseCasesPage() {
                         heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                         content=''
                         button={
-                            <PrimaryButton className="w-auto">
-                                READ USE CASE
-                            </PrimaryButton>
+                            <a href="/use-casesdetail">
+                                <PrimaryButton className="w-auto">
+                                    READ USE CASE
+                                </PrimaryButton>
+                            </a>
                         }
                     />
                     <NftPostComponent
@@ -53,9 +59,11 @@ export default function UseCasesPage() {
                         heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                         content=''
                         button={
-                            <PrimaryButton className="w-auto">
-                                READ USE CASE
-                            </PrimaryButton>
+                            <a href="/use-casesdetail">
+                                <PrimaryButton className="w-auto">
+                                    READ USE CASE
+                                </PrimaryButton>
+                            </a>
                         }
                     />
                     <NftPostComponent
@@ -65,9 +73,11 @@ export default function UseCasesPage() {
                         heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                         content=''
                         button={
-                            <PrimaryButton className="w-auto">
-                                READ USE CASE
-                            </PrimaryButton>
+                            <a href="/use-casesdetail">
+                                <PrimaryButton className="w-auto">
+                                    READ USE CASE
+                                </PrimaryButton>
+                            </a>
                         }
                     />
                 </div>
