@@ -14,7 +14,7 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
   }
 
   function openModal() {
-    const videoElement = document.getElementById("video") as HTMLVideoElement;
+    // const videoElement = document.getElementById("video") as HTMLVideoElement;
     setIsOpen(true);
     // videoElement.play();
     }
