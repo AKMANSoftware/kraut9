@@ -39,10 +39,8 @@ export default function CollectionPage() {
                         }
                     />
                 </div>
-
-
                 {/* Heading for upcoming collections */}
-                <div className="md:text-2xl text-base font-extrabold text-secondary md:py-[30px] py-5 flex items-center justify-center">
+                <div className="md:text-2xl text-base font-extrabold text-secondary md:py-[30px] py-5 flex items-center justify-center xl:w-[85%] lg:w-[90%]">
                     Upcoming Collections
                 </div>
                 <div className="space-y-[30px]">
@@ -93,3 +91,6 @@ export default function CollectionPage() {
         </Layout>
     );
 }
+
+
+

@@ -1,5 +1,7 @@
 
 import { cn } from "../lib/utils";
+import VideoPreviewPopup from "../popups/videopopup";
+
 
 type Props = {
     heading: string;
@@ -12,17 +14,17 @@ type Props = {
 
 export default function NftPostComponent({ heading, mediaVariant, content, button, src, className }: Props) {
     // Declare a variable to play video when we click on play button and vice-versa
-    const handlePlayVideo = () => {
-        const videoElement = document.getElementById("video") as HTMLVideoElement | null;
-        if (videoElement) {
-          if (videoElement.paused) {
-            videoElement.play();
-          } else {
-            videoElement.pause();
-          }
-        }
-      };
-      
+    // const handlePlayVideo = () => {
+    //     const videoElement = document.getElementById("video") as HTMLVideoElement | null;
+    //     if (videoElement) {
+    //         if (videoElement.paused) {
+    //             videoElement.play();
+    //         } else {
+    //             videoElement.pause();
+    //         }
+    //     }
+    // };
+
     return (
         // Select between video and image,,if image is given play button will remove and border color change to secondary else border will be tersioary
         <div
@@ -33,6 +35,7 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
             )}
         >
             <div className="md:w-[700px] h-[406px]  overflow-hidden relative">
+
                 {mediaVariant === "video" ? (
                     <video id="video" src={src} width={505} height={406} controls={false} muted autoPlay={false}
                         className="h-full w-full object-cover object-center"
@@ -41,12 +44,13 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                     <img src={src} width={505} height={406} className="h-full w-full object-cover object-center" />
                 )}
                 {mediaVariant === "video" && (
-                    <button
-                        className="bg-secondary rounded-full p-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                        onClick={handlePlayVideo}
-                    >
-                        <img src="/images/playbutton.svg" width={24} height={24} />
-                    </button>
+                    <VideoPreviewPopup videoLink={src} />
+                    // <button
+                    //     className="bg-secondary rounded-full p-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    //     onClick={handlePlayVideo}
+                    // >
+                    //     <img src="/images/playbutton.svg" width={24} height={24} />
+                    // </button>
                 )}
             </div>
             {/* Define the heading ,paragrapgh as content and button for this component */}

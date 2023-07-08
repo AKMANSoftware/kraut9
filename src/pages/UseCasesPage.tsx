@@ -36,7 +36,6 @@ export default function UseCasesPage() {
                             </a>
                         }
 
-
                     />
                     <NftPostComponent
                         mediaVariant="image"

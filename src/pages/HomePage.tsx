@@ -26,7 +26,7 @@ export default function Homepage() {
                         <img src="/images/logo_lg.svg" width={480} height={480} alt="" />
                     </div>
                 </section>
-                <section className='md:flex w-full lg:py-[180px] py-3 justify-between md:mx-0 mx-4'>
+                <section className='md:flex w-full lg:pt-[180px] lg:pb-16 py-3 justify-between md:mx-0 mx-4'>
                     <div className='md:w-1/2'>
                         <h1 className='text-secondary lg:text-[42px] md:text-[32px] text-2xl font-extrabold'>
                             Welcome to KRAUT9

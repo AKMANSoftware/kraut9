@@ -7,7 +7,7 @@ export default function Header() {
     //pathname variable is declared and set it's property so  when a page is open it's relative name will be in primary color
     const { pathname } = useLocation()
     return (
-        <header className="xl:mx-auto md:px-2 px-4 flex justify-between align-middle max-w-screen-xl sticky py-5 top-0 bg-white z-50">
+        <header className="xl:mx-auto md:px-2 px-4 flex justify-between align-middle max-w-screen-xl sticky py-5 top-0 bg-white z-40">
             <div className="lg:hidden flex items-center md:w-auto w-[70px]">
                 <button>
                     <img src="/icons/bar_menue.svg" />
@@ -51,9 +51,6 @@ export default function Header() {
             </div>
 
         </header>
-
-
-
 
     )
 
