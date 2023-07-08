@@ -12,7 +12,7 @@ export default function MintPage() {
         if (nftCount < remainingCount) {
             setNftCount(nftCount + 1);
         }
-        else{
+        else {
             setRemainingCount;
         }
     };
@@ -25,9 +25,9 @@ export default function MintPage() {
     const handleCountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newCount = parseInt(event.target.value);
         if (newCount >= 0 && newCount <= remainingCount) {
-          setNftCount(newCount);
+            setNftCount(newCount);
         }
-      }
+    }
     const calculateProgressBarWidth = () => {
         return `${(remainingCount - nftCount) / remainingCount * 100}%`;
     };
@@ -37,7 +37,9 @@ export default function MintPage() {
                 {/* main header section with logo image and button*/}
                 <div className="flex items-center justify-evenly py-5">
                     <div>
-                        <img src="/images/logo_sm.svg" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
+                        <a href="/">
+                            <img src="/images/logo_sm.svg" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
+                        </a>
                     </div>
                     <div className="">
                         <PrimaryButton variant="transparent-on-mobile" className="text-sm">
@@ -89,7 +91,7 @@ export default function MintPage() {
                                         </p>
                                     </div>
                                     <div className="flex bg-secondary/10 rounded-full item-center justify-center relative">
-                                        <button className="absolute top-1/2 left-4 -translate-y-1/2"onClick={handleDecrement} disabled={nftCount <= 0}
+                                        <button className="absolute top-1/2 left-4 -translate-y-1/2" onClick={handleDecrement} disabled={nftCount <= 0}
                                         >
                                             <img src="/icons/negative_sign.svg" alt="" />
                                         </button>
@@ -101,9 +103,9 @@ export default function MintPage() {
                                         </button>
                                     </div>
                                     <div>
-                                            <PrimaryButton className="lg:px-[132px] lg:py-3">
-                                                MINT NOW
-                                            </PrimaryButton>
+                                        <PrimaryButton className="lg:px-[132px] lg:py-3">
+                                            MINT NOW
+                                        </PrimaryButton>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +115,9 @@ export default function MintPage() {
             </div>
             <div className="relative">
                 <div className="flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <img src="/images/footerlogo.svg" alt="" />
+                    <a href="/">
+                        <img src="/images/footerlogo.svg" alt="" />
+                    </a>
                 </div>
                 <div className="md:flex items-center py-20 justify-between mx-16 max-w-screen-xl xl:mx-auto">
                     <div className="md:flex hidden">
