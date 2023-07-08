@@ -43,9 +43,11 @@ export default function Header() {
                 </a>
             </div>
             <div className="flex  items-center">
-                <PrimaryButton variant="transparent-on-mobile">
-                    MINT
-                </PrimaryButton>
+                <a href="/mint">
+                    <PrimaryButton className="w-auto">
+                        MINT
+                    </PrimaryButton>
+                </a>
             </div>
 
         </header>

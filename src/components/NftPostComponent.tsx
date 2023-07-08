@@ -52,7 +52,7 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
             {/* Define the heading ,paragrapgh as content and button for this component */}
             <div className="md:py-[30px] py-5 flex flex-col md:gap-24 gap-7 justify-between md:mx-0 mx-4 md:w-full">
                 <div>
-                    <h1 className="font-extrabold lg:text-[2rem] text-secondary">
+                    <h1 className="font-extrabold xl:text-[2rem] lg:text-2xl text-secondary">
                         {heading}
                     </h1>
                     <p className="font-inter lg:text-base text-sm font-normal py-5">
