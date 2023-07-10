@@ -53,7 +53,7 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-screen-lg transform overflow-hidden  rounded-2xl bg-black text-left align-middle shadow-xl transition-all relative">
-                  <video src={videoLink} width={505} height={406} controls={true} autoPlay={true} className="h-[406px] w-[505px] object-cover object-center aspect-video rounded-2xl"
+                  <video src={videoLink} width={505} height={406} controls={true} autoPlay={true} className="h-full w-full object-cover object-center aspect-video rounded-2xl"
                   ></video>
                   <button className="absolute top-5 right-5" onClick={closeModal}>
                     <i className="fa-solid fa-xmark text-[32px] text-white"></i>
