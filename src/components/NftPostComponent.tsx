@@ -13,17 +13,7 @@ type Props = {
 };
 
 export default function NftPostComponent({ heading, mediaVariant, content, button, src, className }: Props) {
-    // Declare a variable to play video when we click on play button and vice-versa
-    // const handlePlayVideo = () => {
-    //     const videoElement = document.getElementById("video") as HTMLVideoElement | null;
-    //     if (videoElement) {
-    //         if (videoElement.paused) {
-    //             videoElement.play();
-    //         } else {
-    //             videoElement.pause();
-    //         }
-    //     }
-    // };
+  
 
     return (
         // Select between video and image,,if image is given play button will remove and border color change to secondary else border will be tersioary
@@ -45,18 +35,12 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                 )}
                 {mediaVariant === "video" && (
                     <VideoPreviewPopup videoLink={src} />
-                    // <button
-                    //     className="bg-secondary rounded-full p-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                    //     onClick={handlePlayVideo}
-                    // >
-                    //     <img src="/images/playbutton.svg" width={24} height={24} />
-                    // </button>
                 )}
             </div>
             {/* Define the heading ,paragrapgh as content and button for this component */}
             <div className="md:py-[30px] py-5 flex flex-col md:gap-24 gap-7 justify-between md:mx-0 mx-4 md:w-full">
                 <div>
-                    <h1 className="font-extrabold xl:text-[2rem] lg:text-2xl text-secondary">
+                    <h1 className="font-extrabold lg:text-2xl text-secondary">
                         {heading}
                     </h1>
                     <p className="font-inter lg:text-base text-sm font-normal py-5">

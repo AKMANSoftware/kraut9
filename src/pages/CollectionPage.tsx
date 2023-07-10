@@ -1,7 +1,7 @@
 import NftPostComponent from "../components/NftPostComponent";
 import { PrimaryButton } from "../components/Buttons";
 import Layout from "../components/layout";
-
+import CollcetioPreviewPopup from "../popups/Collection-Popup";
 // CollectionPage component
 export default function CollectionPage() {
     return (
@@ -23,7 +23,7 @@ export default function CollectionPage() {
                     <NftPostComponent
                         mediaVariant="video"
                         src={'/images/mixkit-a-man-with-a-rainbow-flag-1349-medium.mp4'}
-                        heading="Mini Robots"
+                        heading="RoboMetamorphs – Hagen Pietsch Edition 1 of 3"
                         content={
                             <>
                                 <p>
@@ -33,9 +33,7 @@ export default function CollectionPage() {
                         }
                         button={
                             // Render PrimaryButton
-                            <PrimaryButton>
-                                JOIN WAITLIST
-                            </PrimaryButton>
+                                <CollcetioPreviewPopup/>
                         }
                     />
                 </div>

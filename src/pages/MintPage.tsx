@@ -33,7 +33,7 @@ export default function MintPage() {
     };
     return (
         <div>
-            <div className="mint_background bg-cover bg-no-repeat flex flex-col space-y-7 md:h-[980px]">
+            <div className="mint_background bg-cover bg-no-repeat flex flex-col space-y-7 h-[980px]">
                 {/* main header section with logo image and button*/}
                 <div className="flex items-center justify-evenly py-5">
                     <div>
@@ -47,20 +47,20 @@ export default function MintPage() {
                         </PrimaryButton>
                     </div>
                 </div>
-                <div className="flex items-center justify-center">
-                    <div className="flex flex-col bg-tersioary lg:w-[846px] items-center justify-center lg:rounded-[40px] rounded-[20px] md:py-7 space-y-7 mx-4">
+                <div className="flex items-center justify-center my-[200px]">
+                    <div className="flex flex-col bg-tersioary lg:w-[846px] items-center justify-center lg:rounded-[40px] rounded-[20px] md:py-7 pt-10 space-y-7 mx-4">
                         <div>
-                            <h3 className="text-[32px] font-extrabold text-secondary">
+                            <h3 className="md:text-[32px] text-2xl font-extrabold text-secondary">
                                 Mint Your NFT
                             </h3>
                         </div>
                         <div className="lg:flex gap-x-5 lg:w-[850px] px-7">
                             <div>
-                                <img src="/images/mint_robot.svg" alt="" width={425} height={293} className="rounded-[20px] object-cover object-center w-full" />
+                                <img src="/images/mint_robot.svg" alt="" width={425} height={293} className="rounded-[20px] object-cover object-center w-[425px] h-[293px]" />
                             </div>
                             {/* status and price div*/}
-                            <div className="lg:w-1/2 flex flex-col justify-between mx-4 py-5">
-                                <div className="flex  justify-between text-xs font-semibold text-secondary">
+                            <div className="lg:w-1/2 flex flex-col justify-between mx-4 py-5 md:space-y-0 space-y-2">
+                                <div className="flex justify-between text-xs font-semibold text-secondary">
                                     <p className="text-secondary/60">
                                         STATUS
                                     </p>
@@ -76,7 +76,7 @@ export default function MintPage() {
                                         0.06 ETH
                                     </p>
                                 </div>
-                                <div>
+                                <div className="space-y-2 md:space-y-0">
                                     <p className="text-secondary text-base font-semibold input-for-proggressbar">
                                         {remainingCount - nftCount} Remaining
                                     </p>

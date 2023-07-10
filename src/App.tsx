@@ -6,6 +6,7 @@ import UseCasesPage from "./pages/UseCasesPage"
 import OurTeamPage from "./pages/OurTeamPage"
 import MintPage  from "./pages/MintPage"
 import UseCaseDetailPage from "./pages/UseCaseDetailPage"
+import CollcetioPreviewPopup from "./popups/Collection-Popup"
 
 // define router with each element having it's own path path 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path:'/use-casesdetail',
     element:<UseCaseDetailPage  />
+  },
+  {
+    path:'/collection-popup',
+    element:<CollcetioPreviewPopup   />
   }
 ])
 function App() {

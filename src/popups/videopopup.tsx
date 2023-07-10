@@ -6,24 +6,15 @@ type Props = {
 };
 
 export default function VideoPreviewPopup({ videoLink }: Props) {
-  let [isOpen, setIsOpen] = useState(false)
+  let [isOpen, setIsOpen] = useState(false);
+
   function closeModal() {
-    const videoElement = document.getElementById("video") as HTMLVideoElement;
     setIsOpen(false);
-    videoElement.pause();
   }
 
   function openModal() {
-    // const videoElement = document.getElementById("video") as HTMLVideoElement;
     setIsOpen(true);
-    // videoElement.play();
-    }
-    
-    
-    
-    
-    
-
+  }
 
   return (
     <>
@@ -32,7 +23,7 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
           className="bg-secondary rounded-full p-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           onClick={openModal}
         >
-          <img src="/images/playbutton.svg" width={24} height={24} />
+          <img src="/images/playbutton.svg" width={24} height={24} className='w-6 h-6 object-cover object-center' />
         </button>
       </div>
 
@@ -47,10 +38,10 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm"/>
+            <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto ">
+          <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
@@ -62,10 +53,9 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-screen-lg transform overflow-hidden  rounded-2xl bg-black text-left align-middle shadow-xl transition-all relative">
-                  <video  src={videoLink} width={505} height={406} controls={true} autoPlay={false}
-                    className="h-full w-full object-cover object-center aspect-video rounded-2xl"
+                  <video src={videoLink} width={505} height={406} controls={true} autoPlay={true} className="h-[406px] w-[505px] object-cover object-center aspect-video rounded-2xl"
                   ></video>
-                  <button className='absolute top-5 right-5'>
+                  <button className="absolute top-5 right-5" onClick={closeModal}>
                     <i className="fa-solid fa-xmark text-[32px] text-white"></i>
                   </button>
                 </Dialog.Panel>
@@ -75,5 +65,5 @@ export default function VideoPreviewPopup({ videoLink }: Props) {
         </Dialog>
       </Transition>
     </>
-  )
+  );
 }
