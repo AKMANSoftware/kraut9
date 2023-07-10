@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import { PrimaryButton } from '../components/Buttons'
 
 export default function CollcetioPreviewPopup() {
-    let [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     function closeModal() {
         setIsOpen(false)
@@ -20,7 +20,7 @@ export default function CollcetioPreviewPopup() {
                 </PrimaryButton>
             </div>
             <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-50" onClose={closeModal}>
+                <Dialog as="div" className="relative z-[60]" onClose={closeModal}>
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"

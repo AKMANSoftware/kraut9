@@ -15,8 +15,8 @@ export default function Layout({ children, showAnimation = true }: Props) {
         {
           showAnimation &&
           <>
-            <div className="w-[396px] h-[396px] aspect-square rounded-full bg-tersioary/40 blur-[100px] -translate-x-1/2 -translate-y-1/2 fixed animate-motion1 z-[60]" />
-            <div className="w-[396px] hidden md:block h-[396px] aspect-square rounded-full bg-tersioary/40 blur-[100px] delay-[5s] translate-x-1/2 -translate-y-1/2 fixed animate-motion2 z-[60]" />
+            <div className="w-[396px] h-[396px] aspect-square rounded-full bg-tersioary/40 blur-[100px] -translate-x-1/2 -translate-y-1/2 fixed animate-motion1 z-[52]" />
+            <div className="w-[396px] hidden md:block h-[396px] aspect-square rounded-full bg-tersioary/40 blur-[100px] delay-[5s] translate-x-1/2 -translate-y-1/2 fixed animate-motion2 z-[52]" />
           </>
         }
       </main>
