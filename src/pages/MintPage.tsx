@@ -38,7 +38,7 @@ export default function MintPage() {
                 <div className="flex items-center justify-evenly py-5">
                     <div>
                         <a href="/">
-                            <img src="/images/logo_sm.svg" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
+                            <img src="/images/logo_sm.png" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
                         </a>
                     </div>
                     <div className="">

@@ -23,7 +23,7 @@ export default function Homepage() {
                         </div>
                     </div>
                     <div className='md:w-auto flex justify-center w-[343px] md:mx-0 mx-4 lg:py-0 py-12'>
-                        <img src="/images/logo_lg.svg" width={480} height={480} alt="" />
+                        <img src="/images/logo_lg.png" width={480} height={480} alt="" />
                     </div>
                 </section>
                 <section className='md:flex w-full lg:pt-[180px] lg:pb-16 py-3 justify-between md:mx-0 mx-4'>
