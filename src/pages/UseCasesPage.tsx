@@ -40,7 +40,7 @@ export default function UseCasesPage() {
                     <NftPostComponent
                         mediaVariant="image"
                         className="border !border-tersioary"
-                        src={'/images/house.svg'}
+                        src={'/images/house.png'}
                         heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                         content=''
                         button={

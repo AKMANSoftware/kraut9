@@ -38,7 +38,7 @@ export default function MintPage() {
                 <div className="flex items-center justify-evenly py-5">
                     <div>
                         <a href="/">
-                            <img src="/images/logo_sm.png" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
+                            <img src="/images/footerlogo.svg" className="md:w-[170px] md:h-[105px] w-[130px] h-[80px]" />
                         </a>
                     </div>
                     <div className="">
@@ -56,7 +56,7 @@ export default function MintPage() {
                         </div>
                         <div className="lg:flex gap-x-5 lg:w-[850px] px-7">
                             <div>
-                                <img src="/images/mint_robot.svg" alt="" width={425} height={293} className="rounded-[20px] object-cover object-center w-[425px] h-[293px]" />
+                                <img src="/images/mint_robot.png" alt="" width={425} height={293} className="rounded-[20px] object-cover object-center w-[425px] h-[293px]" />
                             </div>
                             {/* status and price div*/}
                             <div className="lg:w-1/2 flex flex-col justify-between mx-4 py-5 md:space-y-0 space-y-2">

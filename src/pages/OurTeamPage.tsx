@@ -27,27 +27,27 @@ export default function OurTeamPage() {
                 </div>
                 <div className="space-y-[30px] py-[20px]">
                     <TeamComponent
-                        img={'/images/hagen.svg'}
+                        img={'/images/hagen.png'}
                         heading="Hagen"
                         content="Hagen is a passionate, well-known photographer and biker. He provides decades of professional experience as entrepreneur on the advertising area with his own agency and own photography studio. He was editor-in-chief for one of the biggest, European motorcycle magazines. Photography, layout, graphic design, public relations… He has done it all."
                     />
                     <TeamComponent
-                        img={'/images/andre.svg'}
+                        img={'/images/andre.png'}
                         heading="Andre"
                         content="Andre is a car guy and motorsports enthusiast with petrol in his veines. He is a serial Entrepreneur and business development manager with decades of experience in classical industries like automotive aftermarket, airline, ship building, semiconductors, multi-channel food and non-food retails and more. Andre provides exceptional experience on areas likebusiness development, project management, purchase, sales, customer service, marketing or community building."
                     />
                     <TeamComponent
-                        img={'/images/mark.svg'}
+                        img={'/images/mark.png'}
                         heading="Mark"
                         content="Andre is a car guy and motorsports enthusiast with petrol in his veines. He is a serial Entrepreneur and business development manager with decades of experience in classical industries like automotive aftermarket, airline, ship building, semiconductors, multi-channel food and non-food retails and more. Andre provides exceptional experience on areas likebusiness development, project management, purchase, sales, customer service, marketing or community building."
                     />
                     <TeamComponent
-                        img={'/images/gavin.svg'}
+                        img={'/images/gavin.png'}
                         heading="Gavin"
                         content="Gavin is a seasoned business owner and Web3 expert. In his four years as CEO, he built a self-funded sales and marketing company to 30 employees. He is now a significant founder and advisor for numerous Web3 projects, including cryptocurrency exchanges, merchant crypto gateways, DeFi protocols, and NFT projects. Gavin is an enterprise blockchain consultant with a track record of creating high-performing businesses. He is also an award-winning viral marketer, one of the Top 100 Global Facebook Ads Experts, and an engineer by training."
                     />
                     <TeamComponent
-                        img={'/images/khaoki.svg'}
+                        img={'/images/khaoki.png'}
                         heading="Khaoki"
                         content="With almost 10 years of expertise in SaaS, PropTech, augmented reality, and virtual reality, Khaoki is a creative technology expert. She conducts courses for businesses looking to implement Blockchain Technology. She is an enthusiastic cryptocurrency investor and educator. Khaoki is an experienced sales manager with a focus on developing and managing high-performing sales teams with healthy deal flow and valued business relationships. She is also the Co-Founder and CRO of a DeFi Platform and a Crypto Payment Gateway."
                     />
