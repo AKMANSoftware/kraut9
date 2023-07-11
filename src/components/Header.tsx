@@ -96,7 +96,7 @@ export default function Header() {
                 <div className="flex items-center xl:w-[27%] lg:w-[32%]">
                     <a href="/">
                         <img
-                            src="/images/footerlogo.svg"
+                            src="/images/logo_sm.png"
                             className="md:w-[170px] md:h-[105px] w-[129px] h-[80px]"
                         />
                     </a>
