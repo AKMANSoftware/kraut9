@@ -5,9 +5,9 @@ import Layout from "../components/layout";
 export default function Homepage() {
     return (
         <Layout>
-            <div className='xl:mx-auto md:mx-2 max-w-screen-xl'>
-                <section className='lg:flex  w-full items-center justify-between md:py-[90px]'>
-                    <div className='lg:w-1/2 md:mx-0 mx-4'>
+            <div className='mx-auto max-w-screen-xl'>
+                <section className='lg:flex w-full items-center justify-between py-[50px] md:py-[90px]'>
+                    <div className='lg:w-1/2 '>
                         <h1 className='text-secondary lg:text-[52px] md:text-[40px] text-[32px] font-extrabold '>
                             Kraut 9 is Europe's premier NFT-based marketing agency
                         </h1>
@@ -15,18 +15,17 @@ export default function Homepage() {
                             leading the way in revolutionizing marketing with NFTs
                         </p>
                         <div className='md:py-4 py-3 lg:block'>
-                            <PrimaryButton >
-                                <p className="px-10">
-                                    CTA
-                                </p>
+                            <PrimaryButton className="px-20">
+                                CTA
                             </PrimaryButton>
                         </div>
                     </div>
-                    <div className='md:w-auto flex justify-center w-[343px] md:mx-0 mx-4 lg:py-0 py-12'>
-                        <img src="/images/logo_lg.png" width={480} height={480} alt="" />
+                    <div className='flex justify-center w-full md:w-auto py-12  lg:py-0'>
+                        <img src="/images/logo_lg.png" width={480} height={480}
+                            className="max-w-full" alt="" />
                     </div>
                 </section>
-                <section className='md:flex w-full lg:pt-[180px] lg:pb-16 py-3 justify-between md:mx-0 mx-4'>
+                <section className='md:flex w-full lg:pt-[180px] lg:pb-16 py-3 justify-between'>
                     <div className='md:w-1/2'>
                         <h1 className='text-secondary lg:text-[42px] md:text-[32px] text-2xl font-extrabold'>
                             Welcome to KRAUT9
@@ -35,7 +34,7 @@ export default function Homepage() {
                             We offer a thrilling journey for businesses to expand their audience, monetize their fanbase, and embrace the cutting-edge world of web3 technology.
                         </p>
                     </div>
-                    <div className='md:w-1/2 w-[93%]'>
+                    <div className='md:w-1/2'>
                         <p className='md:pb-8 pb-4  font-inter md:px-4 md:w-full'>
                             With over 20 years of experience each, our expert team empowers businesses to tap into the dynamic potential of non-fungible tokens, transforming products and ideas into coveted digital assets. Kraut 9 shapes the future by combining digital art, blockchain technology, and marketing expertise to create immersive experiences for brands.
                         </p>
@@ -44,7 +43,7 @@ export default function Homepage() {
                         </p>
                     </div>
                 </section>
-                <section className="lg:flex gap-x-5 md:mx-0 mx-4">
+                <section className="lg:flex gap-x-5 ">
                     <div className="flex flex-col lg:w-1/2 space-y-5">
                         <ServicesComponent
                             img={'/images/futureofloyalty.svg'}
@@ -118,8 +117,8 @@ export default function Homepage() {
                         />
                     </div>
                 </section>
-                <section className="md:flex md:py-28 py-10 justify-between">
-                    <div className="md:w-1/2 md:mx-0 mx-4">
+                <section className="md:flex md:py-28 py-10 pb-20 justify-between gap-5">
+                    <div className="md:w-1/2">
                         <h1 className="md:text-[42px] text-2xl font-extrabold text-secondary">
                             Our Mission
                         </h1>
@@ -131,7 +130,7 @@ export default function Homepage() {
                             </PrimaryButton>
                         </div>
                     </div>
-                    <div className="md:w-1/2 font-inter px-4  md:py-0 py-[10px] ">
+                    <div className="md:w-1/2 font-inter md:py-0 py-[10px] ">
                         <p className="pb-2">
                             Kraut 9's mission is to revolutionize classical industries and drive unparalleled growth by harnessing the power of Non-Fungible Tokens. We create innovative solutions that elevate brands, increase sales, and generate new avenues of revenue. We specialize in bespoke NFT-based royalty programs and seamlessly merge the physical and digital realms through product-linked NFTs. Kraut 9 aims to develop new revenue streams, establish brand authority using web3 technologies, and guide businesses through the world of NFTs.
                         </p>

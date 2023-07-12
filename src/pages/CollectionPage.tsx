@@ -1,7 +1,7 @@
 import NftPostComponent from "../components/NftPostComponent";
 import { PrimaryButton } from "../components/Buttons";
 import Layout from "../components/layout";
-import CollcetioPreviewPopup from "../popups/Collection-Popup";
+import CollcetioPreviewPopup from "../popups/CollectionPopup";
 // CollectionPage component
 export default function CollectionPage() {
     return (
@@ -22,29 +22,33 @@ export default function CollectionPage() {
                 <div className="md:py-[50px] py-[30px]">
                     <NftPostComponent
                         mediaVariant="video"
-                        src={'/images/mixkit-a-man-with-a-rainbow-flag-1349-medium.mp4'}
+                        src={'/videos/test_video.mp4'}
                         heading="RoboMetamorphs – Hagen Pietsch Edition 1 of 3"
                         content={
-                            <>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </>
+                            <p className="text-base font-normal">
+                                Unleashing the Power of AI and Art in an Immersive Experience!
+                                <br /><br />
+                                <span className="text-sm">
+                                    {
+                                        `Discover where art and AI collide as visionary artist Hagen Pietsch unveils his inaugural NFT collection, "RoboMetamorphs”, a eamless integration of AI-generated imagery and animation, as delightful little robots gracefully transform into captivating forms, showcasing the ever-evolving nature of AI technology`.substring(0, 310)
+                                    }
+                                    <span>...</span>
+                                    <CollcetioPreviewPopup />
+                                </span>
+                            </p>
                         }
                         button={
-                            // Render PrimaryButton
-                                <CollcetioPreviewPopup/>
+                            <PrimaryButton className="w-auto">
+                                JOIN WAITLIST
+                            </PrimaryButton>
                         }
                     />
                 </div>
                 {/* Heading for upcoming collections */}
-                <div className="md:text-2xl text-base font-extrabold text-secondary md:py-[30px] py-5 flex items-center justify-center xl:w-[85%] lg:w-[90%]">
+                {/* <div className="md:text-2xl text-base font-extrabold text-secondary md:py-[30px] py-5 flex items-center justify-center xl:w-[85%] lg:w-[90%]">
                     Upcoming Collections
                 </div>
                 <div className="space-y-[30px]">
-
-                    {/* Second collection div */}
-                    {/* Render CollectionComponent */}
                     <NftPostComponent
                         mediaVariant="image"
                         src={'/images/blackimage-for-componentpage.svg'}
@@ -57,15 +61,11 @@ export default function CollectionPage() {
                             </>
                         }
                         button={
-                            // Render PrimaryButton with custom className
                             <PrimaryButton className="text-tersioary from-secondary to-secondary">
                                 COMING SOON
                             </PrimaryButton>
                         }
                     />
-
-                    {/* Third collection div */}
-                    {/* Render CollectionComponent */}
                     <NftPostComponent
                         mediaVariant="image"
                         src={'/images/blackimage-for-componentpage.svg'}
@@ -78,13 +78,12 @@ export default function CollectionPage() {
                             </>
                         }
                         button={
-                            // Render PrimaryButton with custom className
                             <PrimaryButton className="text-tersioary from-secondary to-secondary">
                                 COMING SOON
                             </PrimaryButton>
                         }
                     />
-                </div>
+                </div> */}
             </div>
         </Layout>
     );

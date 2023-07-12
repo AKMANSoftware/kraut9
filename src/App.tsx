@@ -6,7 +6,7 @@ import UseCasesPage from "./pages/UseCasesPage"
 import OurTeamPage from "./pages/OurTeamPage"
 import MintPage  from "./pages/MintPage"
 import UseCaseDetailPage from "./pages/UseCaseDetailPage"
-import CollcetioPreviewPopup from "./popups/Collection-Popup"
+import CollcetioPreviewPopup from "./popups/CollectionPopup"
 
 // define router with each element having it's own path path 
 

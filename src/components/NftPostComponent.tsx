@@ -1,6 +1,6 @@
 
 import { cn } from "../lib/utils";
-import VideoPreviewPopup from "../popups/videopopup";
+import VideoPreviewPopup from "../popups/VideoPopup";
 
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 };
 
 export default function NftPostComponent({ heading, mediaVariant, content, button, src, className }: Props) {
-  
+
 
     return (
         // Select between video and image,,if image is given play button will remove and border color change to secondary else border will be tersioary
@@ -38,7 +38,7 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                 )}
             </div>
             {/* Define the heading ,paragrapgh as content and button for this component */}
-            <div className="md:py-[30px] py-5 flex flex-col md:gap-24 gap-7 justify-between md:mx-0 mx-4 md:w-full">
+            <div className="md:py-[30px] p-5 flex flex-col md:gap-24 gap-7 justify-between  md:w-full">
                 <div>
                     <h1 className="font-extrabold lg:text-2xl text-secondary">
                         {heading}
