@@ -68,7 +68,7 @@ export default function UseCasesPage() {
                     <NftPostComponent
                         mediaVariant="image"
                         className="border !border-tersioary"
-                        src={'/images/man.svg'}
+                        src={'/images/man.png'}
                         heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                         content=''
                         button={

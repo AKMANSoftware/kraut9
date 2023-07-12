@@ -85,16 +85,28 @@ export default function Footer() {
                         © 2023 – Kraut9 – All Rights Reserved
                     </a>
                 </div>
-                <div>
-                    <a href="">
-                        Privacy Policy    •    Terms
+                <div className="space-x-3">
+                    <a href="/privacy">
+                        Privacy Policy
+                    </a>
+                    <span>
+                        •
+                    </span>
+                    <a href="/terms">
+                        Terms
                     </a>
                 </div>
             </div>
             <div className="flex flex-col items-center  md:hidden  text-halfSecondary py-16 gap-y-5">
-                <div>
-                    <a href="">
-                        Privacy Policy    •    Terms
+                <div className="space-x-3">
+                    <a href="/privacy">
+                        Privacy Policy
+                    </a>
+                    <span>
+                        •
+                    </span>
+                    <a href="/terms">
+                        Terms
                     </a>
                 </div>
                 <div>

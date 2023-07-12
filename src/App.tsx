@@ -7,6 +7,8 @@ import OurTeamPage from "./pages/OurTeamPage"
 import MintPage  from "./pages/MintPage"
 import UseCaseDetailPage from "./pages/UseCaseDetailPage"
 import CollcetioPreviewPopup from "./popups/CollectionPopup"
+import TermsPage from "./pages/TermsPage"
+import PrivacyPage from "./pages/PrivacyPage"
 
 // define router with each element having it's own path path 
 
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path:'/collection-popup',
     element:<CollcetioPreviewPopup   />
+  },
+  {
+    path:'/terms',
+    element:<TermsPage   />
+  },
+  {
+    path:'/privacy',
+    element:<PrivacyPage   />
   }
 ])
 function App() {
