@@ -39,7 +39,7 @@ export default function OurTeamPage() {
                     <TeamComponent
                         img={'/images/mark.png'}
                         heading="Mark"
-                        content="Andre is a car guy and motorsports enthusiast with petrol in his veines. He is a serial Entrepreneur and business development manager with decades of experience in classical industries like automotive aftermarket, airline, ship building, semiconductors, multi-channel food and non-food retails and more. Andre provides exceptional experience on areas likebusiness development, project management, purchase, sales, customer service, marketing or community building."
+                        content="Mark has expertise working for major international business consulting firms Accenture and KPMG. He is a Web3 degen, artist, producer, and marketing consultant. He is aware of how to market a product by creating a narrative, using images, speaking clearly, and focusing on certain markets. He has experience in a variety of NFTs and has additional expertise in the branding, music, fashion, and sports industries."
                     />
                     <TeamComponent
                         img={'/images/gavin.png'}

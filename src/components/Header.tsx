@@ -10,6 +10,7 @@ export default function Header() {
     const [windowScroll, setWindowScroll] = useState(0);
 
     useEffect(() => {
+        setWindowScroll(window.scrollY)
         window.addEventListener("scroll", () => {
             setWindowScroll(window.scrollY)
         })
