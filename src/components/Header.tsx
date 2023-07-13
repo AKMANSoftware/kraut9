@@ -21,7 +21,10 @@ export default function Header() {
     };
 
     return (
-        <header className="sticky py-2 md:py-4 top-0 bg-white z-40 px-4">
+        <header className={cn(
+            "sticky py-2 md:py-4 top-0 z-40 px-4",
+            windowScroll >= 10 && "bg-white"
+        )}>
             <div className="xl:mx-auto flex justify-between align-middle max-w-screen-xl">
                 <div className="lg:hidden flex items-center">
                     <button onClick={toggleMenu} className="w-6 h-6 aspect-square">
