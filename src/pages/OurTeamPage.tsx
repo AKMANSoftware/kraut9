@@ -47,9 +47,9 @@ export default function OurTeamPage() {
                         content="Gavin is a seasoned business owner and Web3 expert. In his four years as CEO, he built a self-funded sales and marketing company to 30 employees. He is now a significant founder and advisor for numerous Web3 projects, including cryptocurrency exchanges, merchant crypto gateways, DeFi protocols, and NFT projects. Gavin is an enterprise blockchain consultant with a track record of creating high-performing businesses. He is also an award-winning viral marketer, one of the Top 100 Global Facebook Ads Experts, and an engineer by training."
                     />
                     <TeamComponent
-                        img={'/images/khaoki.png'}
-                        heading="Khaoki"
-                        content="With almost 10 years of expertise in SaaS, PropTech, augmented reality, and virtual reality, Khaoki is a creative technology expert. She conducts courses for businesses looking to implement Blockchain Technology. She is an enthusiastic cryptocurrency investor and educator. Khaoki is an experienced sales manager with a focus on developing and managing high-performing sales teams with healthy deal flow and valued business relationships. She is also the Co-Founder and CRO of a DeFi Platform and a Crypto Payment Gateway."
+                        img={'/images/pauli.png'}
+                        heading="Pauli"
+                        content="With almost 10 years of expertise in SaaS, PropTech, augmented reality, and virtual reality, Pauli is a creative technology expert. She conducts courses for businesses looking to implement Blockchain Technology. She is an enthusiastic cryptocurrency investor and educator. Pauli is an experienced sales manager with a focus on developing and managing high-performing sales teams with healthy deal flow and valued business relationships. She is also the Co-Founder and CRO of a DeFi Platform and a Crypto Payment Gateway."
                     />
                 </div>
             </div>

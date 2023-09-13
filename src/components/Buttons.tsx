@@ -41,3 +41,11 @@ export function SecondaryButton({ children, className }: SecondaryBtnProps) {
     </button>
   );
 }
+export function SecondaryYellowButton({ children, className }: SecondaryBtnProps) {
+  return (
+    <button className={"text-base text-center justify-center rounded-full font-bold text-secondary  bg-tersioary px-5 py-3 transition-all" + className}>
+      {children}
+    </button>
+    
+  );
+}

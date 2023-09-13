@@ -1,10 +1,12 @@
 
+import React from "react";
 import { cn } from "../lib/utils";
+import CollectionPage from "../pages/CollectionPage";
 import VideoPreviewPopup from "../popups/VideoPopup";
 
 
 type Props = {
-    heading: string;
+    heading: React.ReactNode;
     content: React.ReactNode;
     mediaVariant: "video" | "image";
     src: string;
@@ -13,7 +15,7 @@ type Props = {
 };
 
 export default function NftPostComponent({ heading, mediaVariant, content, button, src, className }: Props) {
-
+    const iscollection = CollectionPage();
 
     return (
         // Select between video and image,,if image is given play button will remove and border color change to secondary else border will be tersioary
@@ -24,7 +26,7 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                 className
             )}
         >
-            <div className="md:w-[700px] h-[406px]  overflow-hidden relative">
+            <div className="md:w-[700px] h-[466px]  overflow-hidden relative">
 
                 {mediaVariant === "video" ? (
                     <video id="video" src={src} width={505} height={406} controls={false} muted autoPlay={false}
@@ -38,12 +40,13 @@ export default function NftPostComponent({ heading, mediaVariant, content, butto
                 )}
             </div>
             {/* Define the heading ,paragrapgh as content and button for this component */}
-            <div className="md:py-[30px] p-5 flex flex-col md:gap-24 gap-7 justify-between  md:w-full">
+            <div className={cn(iscollection ? " md:py-10 p-5 flex flex-col justify-between  md:w-full" : "md:py-[30px] p-5 flex flex-col md:gap-24 gap-7 justify-between  md:w-full",
+            )}>
                 <div>
                     <h1 className="font-extrabold lg:text-2xl text-secondary">
                         {heading}
                     </h1>
-                    <p className="font-inter lg:text-base text-sm font-normal py-5">
+                    <p className="font-inter lg:text-base text-sm font-normal pt-5">
                         {content}
                     </p>
                 </div>

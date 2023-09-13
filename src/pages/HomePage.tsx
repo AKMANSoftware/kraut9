@@ -16,7 +16,7 @@ export default function Homepage() {
                         </p>
                         <div className='md:py-4 py-3 lg:block'>
                             <PrimaryButton className="px-20">
-                                CTA
+                                Email
                             </PrimaryButton>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ export default function Homepage() {
                         <div className="py-11 md:flex hidden">
                             <PrimaryButton >
                                 <p className="px-10">
-                                    CTA
+                                    Email
                                 </p>
                             </PrimaryButton>
                         </div>
