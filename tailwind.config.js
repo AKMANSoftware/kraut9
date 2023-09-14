@@ -1,36 +1,48 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: ["class"],
+export default {
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
+      // define all colors
+      colors: {
+        primary: '#28C6F3',
+        secondary: '#27282A',
+        tersioary: '#FDCB2A',
+        tersioarysolid: '#FFCB00',
+        halfSecondary: '#27282A80',
+        lightwhite: '#c5e5f0'
+      },
       keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+        motion1: {
+          "0%, 100%": {
+            top: "0px",
+            left: "0px"
+          },
+          "50%": {
+            top: "100%",
+            left: "100%"
+          },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
+        motion2: {
+          "0%, 100%": {
+            top: "0px",
+            right: "0px"
+          },
+          "50%": {
+            top: "100%",
+            right: "100%"
+          },
+        }
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
+        "motion1": "motion1 15s linear infinite",
+        "motion2": "motion2 15s linear infinite"
+      }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 }
+
