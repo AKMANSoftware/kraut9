@@ -1,7 +1,6 @@
 
 import React from "react";
 import { cn } from "../lib/utils";
-import CollectionPage from "../pages/CollectionPage";
 import VideoPreviewPopup from "../popups/VideoPopup";
 
 
