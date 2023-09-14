@@ -1,6 +1,13 @@
 import NftPostComponent from "../components/NftPostComponent";
 import { PrimaryButton, SecondaryYellowButton } from "../components/Buttons";
 import Layout from "../components/layout";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+
 export default function CollectionPage() {
     return (
         <Layout>
@@ -188,12 +195,21 @@ export default function CollectionPage() {
 
                     </div>
                 </div>
-                <div className="mt-14">
+                <div className="flex flex-col items-center justify-center mt-14">
                     <h1 className="text-[42px] font-extrabold text-secondary">
                         FAQs
                     </h1>
 
-                  
+
+                    <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger className="">Mint Details</AccordionTrigger>
+                            <AccordionContent>
+                                Yes. It adheres to the WAI-ARIA design pattern.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+
 
                 </div>
             </div>
