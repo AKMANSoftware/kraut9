@@ -54,7 +54,7 @@ export default function UseCasesPage() {
                     <NftPostComponent
                         mediaVariant="image"
                         className="border !border-tersioary h-[300px]"
-                        src={'/images/car.svg'}
+                        src={'/icons/car.svg'}
                         heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                         content=''
                         button={
