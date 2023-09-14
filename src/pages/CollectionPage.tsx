@@ -11,7 +11,7 @@ import {
 export default function CollectionPage() {
     return (
         <Layout>
-            <div className="max-w-screen-xl xl:mx-auto  mx-4 py-5 md:py-[90px]">
+            <div className="max-w-screen-xl xl:mx-auto  mx-4 py-5 md:pt-[90px] pb-[106px]">
                 {/* div with heading and description */}
                 <div className="md:flex md:flex-row flex-col justify-between items-center md:py-0 py-5">
                     <div className="lg:text-[3.25rem] text-[2rem] font-extrabold text-secondary">
