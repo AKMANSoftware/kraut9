@@ -204,7 +204,7 @@ export default function CollectionPage() {
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="">Mint Details</AccordionTrigger>
-                            <AccordionContent className="border-none">
+                            <AccordionContent className="">
                                 Yes. It adheres to the WAI-ARIA design pattern.
                             </AccordionContent>
                         </AccordionItem>
