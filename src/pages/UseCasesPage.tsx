@@ -7,7 +7,7 @@ export default function UseCasesPage() {
     return (
         <Layout>
             {/*manualy  create first div and use flex-row property to asjust it according to figma */}
-            <div className="max-w-screen-xl lg:mx-auto mx-4">
+            <div className="max-w-screen-xl lg:mx-auto mx-4 pb-[66px] pt-[60px] md:pb-9 md:pt-[145px]">
                 <div className="md:flex justify-between md:py-[30px] py-[10px]">
                     <div className="md:text-[52px] text-[32px] font-extrabold text-secondary">
                         <h1>
@@ -24,9 +24,10 @@ export default function UseCasesPage() {
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
                     <UseCaseComponent
                         className=""
-                        src={'/images/carshowroom.png'}
+                        srcLarge={'/images/carshowroom.png'} 
+                        srcSmall={'/images/carshowroomm.png'} 
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
-                        content=''
+                        content=""
                         button={
                             <a href="/use-casesdetail">
                                 <PrimaryButton className="w-auto">
@@ -34,11 +35,12 @@ export default function UseCasesPage() {
                                 </PrimaryButton>
                             </a>
                         }
-
                     />
+
                     <UseCaseComponent
                         className=""
-                        src={'/images/house.png'}
+                        srcLarge={'/images/house.png'} 
+                        srcSmall={'/images/housem.png'}
                         heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                         content=''
                         button={
@@ -51,7 +53,8 @@ export default function UseCasesPage() {
                     />
                     <UseCaseComponent
                         className=""
-                        src={'/images/car.png'}
+                        srcLarge={'/images/car.png'} 
+                        srcSmall={'/images/carm.png'}
                         heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                         content=''
                         button={
@@ -64,7 +67,8 @@ export default function UseCasesPage() {
                     />
                     <UseCaseComponent
                         className=" "
-                        src={'/images/running.png'}
+                        srcLarge={'/images/running.png'}
+                        srcSmall={'/images/runningm.png'}
                         heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                         content=''
                         button={
