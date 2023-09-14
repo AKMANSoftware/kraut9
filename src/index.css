@@ -9,6 +9,10 @@
 
 .font-inter {
   font-family: 'Inter';
+  
+}
+.roboto{
+  font-family: 'Roboto Mono';
 }
 .mint_background{
   background-image: url(/images/mintpage_background.png);

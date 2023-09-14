@@ -1,6 +1,8 @@
 import NftPostComponent from "../components/NftPostComponent";
 import { PrimaryButton, SecondaryYellowButton } from "../components/Buttons";
 import Layout from "../components/layout";
+import React, { useState } from 'react';
+
 import {
     Accordion,
     AccordionContent,
@@ -172,8 +174,8 @@ export default function CollectionPage() {
                         </div>
                         <div className="flex items-center justify-center h-[126px]  border-b border-tersioary">
                             <img src="/icons/ethereum.svg" width={30} height={50} className="w-auto object-contain h-[50px]" />
-                            {/* graphic font will use here */}
-                            <p className="text-sm font-semibold">
+                           
+                            <p className="text-sm font-bold roboto">
                                 ethereum <br />
                                 foundation
                             </p>
@@ -258,12 +260,20 @@ type ExpandableProps = {
     content: React.ReactNode
 }
 function Expandable({ heading, content }: ExpandableProps) {
+    const [isFontBold, setIsFontBold] = useState(false);
+    const fontbold = () => {
+        setIsFontBold(!isFontBold);
+      };
+      const headingStyle = {
+        fontWeight: isFontBold ? 'bold' : 'normal',
+      };
+
     return (
         <>
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1" className="border-tersioary border rounded-[20px]">
-                    <AccordionTrigger className="">
-                        {heading}
+                    <AccordionTrigger className="" onClick={fontbold}>
+                    <span style={headingStyle}>{heading}</span>
                     </AccordionTrigger>
                     <AccordionContent className="">
                         {content}
