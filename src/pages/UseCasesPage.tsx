@@ -7,8 +7,8 @@ export default function UseCasesPage() {
     return (
         <Layout>
             {/*manualy  create first div and use flex-row property to asjust it according to figma */}
-            <div className="max-w-screen-xl lg:mx-auto mx-4 pb-[66px] pt-[60px] md:pb-9 md:pt-[145px]">
-                <div className="md:flex justify-between md:py-[30px] py-[10px]">
+            <div className="max-w-screen-xl lg:mx-auto mx-4 pb-[66px] pt-[60px] md:pb-9 md:pt-[129px]">
+                <div className="md:flex justify-between md:pb-[30px] py-[10px]">
                     <div className="md:text-[52px] text-[32px] font-extrabold text-secondary">
                         <h1>
                             Use Cases
@@ -23,8 +23,8 @@ export default function UseCasesPage() {
                 {/* Use of Nftpostcomponent */}
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
                     <UseCaseComponent
-                        className=""
-                        srcLarge={'/images/carshowroom.png'} 
+                        className="h-[300px]"
+                        srcLarge={'/images/carshowroom.svg'} 
                         srcSmall={'/images/carshowroomm.png'} 
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                         content=""

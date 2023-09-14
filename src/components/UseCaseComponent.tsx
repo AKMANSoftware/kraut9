@@ -17,17 +17,16 @@ export default function UseCaseComponent({ heading, content, button, srcLarge, s
     return (
         <div
             className={cn(
-                "flex md:flex-row flex-col gap-x-7 rounded-[40px] overflow-hidden h-[378px] md:h-[300px] border border-tersioary",
+                "flex md:flex-row flex-col gap-x-7 rounded-[40px] overflow-hidden h-[300px] md:h-[300px] border border-tersioary ",
                 className
             )}
         >
-            <div className="md:w-[700px] md:h-[466px] h-[203px] w-full overflow-hidden relative">
+            <div className="md:w-[700px]  h-[300px] w-full overflow-hidden relative">
                 {/* Display the large image for screens wider than 768px */}
                 <img
                     src={srcLarge}
                     width={505}
-                    height={406}
-                    className="h-full w-full object-cover object-center md:block hidden"
+                    className="h-full w-full object-cover  object-center md:flex hidden"
                 />
                 {/* Display the small image for screens 768px and below */}
                 <img
@@ -38,7 +37,7 @@ export default function UseCaseComponent({ heading, content, button, srcLarge, s
             </div>
             <div
                 className={cn(
-                    "md:py-10 p-5 flex flex-col justify-between md:w-full",
+                    "md:py-10 p-5 flex flex-col justify-between md:w-full h-[300px]",
                     className
                 )}
             >

@@ -30,10 +30,10 @@ export default function CollectionPage() {
                     <NftPostComponent
                         button
                         mediaVariant="image"
-                        className="!border-tersioary "
+                        className="!border-tersioary !text-sm"
                         src={'/images/rorbotcollection.png'}
                         heading={<p className="max-w-[553px]">
-                            "🤖🌓 Kraut9 - RoboMetaMorphs by Hagen Pietsch🤖🌓"
+                            🤖🌓 Kraut9 - RoboMetaMorphs by Hagen Pietsch🤖🌓
                         </p>}
                         content={
                             <p className="text-sm font-normal max-w-[665px]">

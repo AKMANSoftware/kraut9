@@ -14,7 +14,7 @@ export default function Homepage() {
                         <p className='text-secondary md:text-2xl text-base font-normal md:py-7 py-4 font-inter xl:w-[70%] md:w-full lg:w-[80%] w-[80%]'>
                             leading the way in revolutionizing marketing with NFTs
                         </p>
-                        <div className=' lg:block'>
+                        <div className='pt-[30px] lg:block'>
                             <PrimaryButton className=" px-[74px] py-[18px]">
                                 Email
                             </PrimaryButton>
