@@ -15,32 +15,32 @@ type Props = {
 };
 
 export default function NftPostComponent({ heading, mediaVariant, content, button, src, className }: Props) {
-    const iscollection = CollectionPage();
 
     return (
         // Select between video and image,,if image is given play button will remove and border color change to secondary else border will be tersioary
         <div
             className={cn(
-                "md:flex gap-x-7 rounded-[40px] overflow-hidden border",
+                "flex flex-col md:flex-row gap-x-7 rounded-[40px] overflow-hidden border md:max-h-[475px]",
                 mediaVariant === "video" ? "border-tersioary" : "md:border-halfSecondary/10 border-tersioary",
                 className
             )}
         >
-            <div className="md:w-[700px] h-[466px]  overflow-hidden relative">
+            <div className="md:w-[889px] h-auto overflow-hidden relative">
 
                 {mediaVariant === "video" ? (
                     <video id="video" src={src} width={505} height={406} controls={false} muted autoPlay={false}
                         className="h-full w-full object-cover object-center"
                     ></video>
                 ) : (
-                    <img src={src} width={505} height={406} className="h-full w-full object-cover object-center" />
+                    <img src={src}  className="h-full w-full object-cover object-center" />
                 )}
                 {mediaVariant === "video" && (
                     <VideoPreviewPopup videoLink={src} />
                 )}
             </div>
             {/* Define the heading ,paragrapgh as content and button for this component */}
-            <div className={cn(iscollection ? " md:py-10 p-5 flex flex-col justify-between  md:w-full" : "md:py-[30px] p-5 flex flex-col md:gap-24 gap-7 justify-between  md:w-full",
+            <div className={cn("md:py-[30px] p-5 flex flex-col md:gap-24 gap-7 justify-between  md:w-full",
+            className
             )}>
                 <div>
                     <h1 className="font-extrabold lg:text-2xl text-secondary">

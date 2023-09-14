@@ -24,30 +24,28 @@ export default function CollectionPage() {
 
                 {/* First collection div */}
                 {/* Render CollectionComponent */}
-                <div className="md:py-[50px] py-[30px]">
+                <div className="md:pt-[55px] pb-[50px] py-[30px]">
                     <NftPostComponent
                         button
                         mediaVariant="image"
-                        className="!border-tersioary h-[466px]"
+                        className="!border-tersioary "
                         src={'/images/rorbotcollection.png'}
                         heading={<p className="max-w-[553px]">
                             "🤖🌓 Kraut9 - RoboMetaMorphs by Hagen Pietsch🤖🌓"
                         </p>}
                         content={
                             <p className="text-sm font-normal max-w-[665px]">
-                                Kraut9 is an AI fueled NFT launchpad and web3 marketing powerhouse well funded with private investors 🔥 <br /><br />
-
+                                Kraut9 is an AI fueled NFT launchpad and web3 marketing powerhouse well funded with private investors 🔥 
+                                <br /><br className="md:block hidden" /><br  className="md:block hidden"/>
                                 In partnership with 4x SOLD OUT project Wonderland, and forging alliances to combine AI with renowned artists of high caliber and marketing geniuses to drop its first collection.<br />
                                 ‘RoboMetamorphs’ is an intersection of Art and AI with robots that morph into an array of forms conveying the ever-evolving nature of AI technology 💃 🕺 <br />
-                                💥 🥂 🎵 <br /><br />
-
+                                💥 🥂 🎵 <br /><br className="md:block hidden" /><br className="md:block hidden" />
                                 ✅ Partnered with Moonlanding Media and Wonderland 🚀<br />
                                 ✅ Headed by top European marketing agency CEO ⚡️<br />
                                 ✅ Team that has worked with Deutsche Bank, Lufthansa, PEDDERS Suspension and others!<br />
                                 💎 💎 💎 💎 💎 💎
                             </p>
                         }
-
                     />
                 </div>
                 {/* Heading for upcoming collections */}
@@ -92,7 +90,7 @@ export default function CollectionPage() {
                         }
                     />
                 </div>
-                <div className="py-[80px] flex flex-col items-center justify-center gap-12">
+                <div className="py-10 md:py-[80px] flex flex-col items-center justify-center gap-12">
                     <h1 className="text-[42px] font-extrabold text-secondary">
                         Roadmap
                     </h1>
@@ -158,7 +156,7 @@ export default function CollectionPage() {
 
 
                 </div>
-                <div className="py-11 flex flex-col items-center justify-center ">
+                <div className="md:py-11 flex flex-col text-center items-center justify-center ">
                     <h1 className="text-[42px] font-extrabold text-secondary">
                         INVESTORS & PARTNERS
                     </h1>
@@ -190,7 +188,7 @@ export default function CollectionPage() {
                             <img src="/icons/uniswap.svg" width={128} height={32} className="w-auto object-contain h-[32px]" />
                         </div>
                         <div className="flex items-center justify-center h-[126px]  border-tersioary">
-                            <img src="/icons/kraut.svg" width={101} height={63} className="w-auto object-contain h-[63px]" />
+                            <img src="/images/footerlogo.svg" width={101} height={63} className="w-auto object-contain h-[63px]" />
                         </div>
 
                     </div>
@@ -199,23 +197,53 @@ export default function CollectionPage() {
                     <h1 className="text-[42px] font-extrabold text-secondary">
                         FAQs
                     </h1>
+                    <div className="space-y-[10px] mt-5">
+                        <Expandable
+                            heading="Mint Details"
+                            content={<p> <span className="font-bold">Chain:</span> Ethereum. <br />
+                                <span className="font-bold">Price:</span> TBA. Cheaper for whitelisted members, getting more expensive in stages.<br />
+                                <span className="font-bold">First </span>Collection: RoboMetaMorphs by Hagen PietschCollection<br />
+                                <span className="font-bold">Size: </span>Up to 2,000 depending on demand, ensuring sellout is achieved.<br />
+                                <span className="font-bold">Mint location:</span> Join our <span className="underline">Discord</span> and <span className="underline">Twitter</span> for updates!<br />
+                            </p>}
+                        />
+                        <Expandable
+                            heading="Real World Value"
+                            content={
+                                <>
+                                    You hate rug pulls, don’t you? So do we. The point is we just couldn’t afford to scam you. Behind RoboMetamorphs stands Kraut 9, Europes premiere web3 marketing agency. You’re going to have the security of a legit project.
+                                    And not just that. As owner of a RoboMetamorph NFT you’ll get exclusive access to the members only area of our discord and meet likeminded, creative people like you. Share your art, get exclusive tutorials, join AMA’s with Hagen Pietsch himself. On top you’ll get a fine art print of your NFT.
+                                </>
+                            }
+                        />
+                        <Expandable
+                            heading="How do you impact the world?"
+                            content={
+                                <>
+                                    Get better with generative art. Generate these amazing pictures as you see them all over the net. Become an expert and even earn money with your art. Build an Instagram them page or sell your picture via Print on Demand. Experience a world of endless possibilities
+                                    By creating an open narrative based on a well-established multiverse, where the fans can participate in the journey by providing the tools to create characters and the facilities and expertise to bring these characters to life!
+                                </>
+                            }
+                        />
+                        <Expandable
+                            heading="Who is the team"
+                            content={
+                                <>
+                                    The fully doxed international team at Kraut 9 comprises of industry experts with decades of experience in old-school industries as well as the best of the best of relevant branches in crypto and blockchain technology. Check out the team page for more information.
+                                </>
+                            }
+                        />
+                        <Expandable
+                            heading="Where is the best place to learn more ?"
+                            content={
+                                <>
+                                    Dive into the RoboMetamorph universe by following us on Twitter and join our amazing Discord community to learn more. During our AMA’s you’re welcome to usk us your questions.
+                                </>
+                            }
+                        />
+                    </div>
 
 
-                    <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1" className="border-tersioary border rounded-[20px]">
-                            <AccordionTrigger className="">
-                                Mint Details
-                            </AccordionTrigger>
-                            <AccordionContent className="">
-                                <p> <span>Chain:</span> Ethereum. <br />
-                                    <span>Price:</span> TBA. Cheaper for whitelisted members, getting more expensive in stages.<br />
-                                    <span>First </span>Collection: RoboMetaMorphs by Hagen PietschCollection<br />
-                                    <span>Size: </span>Up to 2,000 depending on demand, ensuring sellout is achieved.<br />
-                                    <span>Mint location:</span> Join our Discord and Twitter for updates!<br />
-                                </p>
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
 
 
                 </div>
@@ -225,4 +253,23 @@ export default function CollectionPage() {
 }
 
 
-
+type ExpandableProps = {
+    heading: string,
+    content: React.ReactNode
+}
+function Expandable({ heading, content }: ExpandableProps) {
+    return (
+        <>
+            <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className="border-tersioary border rounded-[20px]">
+                    <AccordionTrigger className="">
+                        {heading}
+                    </AccordionTrigger>
+                    <AccordionContent className="">
+                        {content}
+                    </AccordionContent>
+                </AccordionItem>
+            </Accordion>
+        </>
+    )
+}

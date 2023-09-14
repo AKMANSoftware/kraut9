@@ -24,7 +24,7 @@ export default function UseCasesPage() {
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
                     <UseCaseComponent
                         className=""
-                        src={'/images/carshowroom.svg'}
+                        src={'/images/carshowroom.png'}
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                         content=''
                         button={
@@ -38,7 +38,7 @@ export default function UseCasesPage() {
                     />
                     <UseCaseComponent
                         className=""
-                        src={'/images/house.svg'}
+                        src={'/images/house.png'}
                         heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                         content=''
                         button={
@@ -51,7 +51,7 @@ export default function UseCasesPage() {
                     />
                     <UseCaseComponent
                         className=""
-                        src={'/icons/car.svg'}
+                        src={'/images/car.png'}
                         heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                         content=''
                         button={
@@ -64,7 +64,7 @@ export default function UseCasesPage() {
                     />
                     <UseCaseComponent
                         className=" "
-                        src={'/images/running.svg'}
+                        src={'/images/running.png'}
                         heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                         content=''
                         button={
