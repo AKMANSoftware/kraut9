@@ -1,5 +1,5 @@
 import { PrimaryButton } from "../components/Buttons";
-import NftPostComponent from "../components/NftPostComponent";
+import UseCaseComponent from "../components/UseCaseComponent";
 import Layout from "../components/layout";
 
 
@@ -22,9 +22,8 @@ export default function UseCasesPage() {
                 </div>
                 {/* Use of Nftpostcomponent */}
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
-                    <NftPostComponent
-                        mediaVariant="image"
-                        className="border !border-tersioary h-[300px]"
+                    <UseCaseComponent
+                        className=""
                         src={'/images/carshowroom.svg'}
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                         content=''
@@ -37,9 +36,8 @@ export default function UseCasesPage() {
                         }
 
                     />
-                    <NftPostComponent
-                        mediaVariant="image"
-                        className="border !border-tersioary h-[300px]"
+                    <UseCaseComponent
+                        className=""
                         src={'/images/house.svg'}
                         heading="Exploring NFT-based Fractional Ownership and Tokenization in the Real Estate Industry"
                         content=''
@@ -51,9 +49,8 @@ export default function UseCasesPage() {
                             </a>
                         }
                     />
-                    <NftPostComponent
-                        mediaVariant="image"
-                        className="border !border-tersioary h-[300px]"
+                    <UseCaseComponent
+                        className=""
                         src={'/icons/car.svg'}
                         heading="Engaging Fans through NFT Collectibles and Interactive Experiences for a Famous GT3 Racing Team"
                         content=''
@@ -65,9 +62,8 @@ export default function UseCasesPage() {
                             </a>
                         }
                     />
-                    <NftPostComponent
-                        mediaVariant="image"
-                        className="border !border-tersioary h-[300px] "
+                    <UseCaseComponent
+                        className=" "
                         src={'/images/running.svg'}
                         heading="Enhancing Brand Engagement and Authenticity with NFT-based Sportswear Collectibles for a Sportswear Brand"
                         content=''
