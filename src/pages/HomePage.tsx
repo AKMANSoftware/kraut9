@@ -14,8 +14,8 @@ export default function Homepage() {
                         <p className='text-secondary md:text-2xl text-base font-normal md:py-7 py-4 font-inter xl:w-[70%] md:w-full lg:w-[80%] w-[80%]'>
                             leading the way in revolutionizing marketing with NFTs
                         </p>
-                        <div className='md:py-4 py-3 lg:block'>
-                            <PrimaryButton className="px-20">
+                        <div className=' lg:block'>
+                            <PrimaryButton className=" px-[74px] py-[18px]">
                                 Email
                             </PrimaryButton>
                         </div>
@@ -123,10 +123,8 @@ export default function Homepage() {
                             Our Mission
                         </h1>
                         <div className="py-11 md:flex hidden">
-                            <PrimaryButton >
-                                <p className="px-10">
-                                    Email
-                                </p>
+                            <PrimaryButton className=" px-[74px] py-[18px]">
+                                Email
                             </PrimaryButton>
                         </div>
                     </div>
@@ -143,9 +141,9 @@ export default function Homepage() {
                         <p className="py-2">
                             Together, we redefine success in a rapidly evolving world.
                         </p>
-                        <div className="flex md:hidden items-center pt-2">
-                            <PrimaryButton className="">
-                                CAT
+                        <div className="py-11 flex md:hidden">
+                            <PrimaryButton className=" px-[74px] py-[18px]">
+                                Email
                             </PrimaryButton>
                         </div>
                     </div>

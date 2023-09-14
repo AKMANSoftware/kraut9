@@ -202,10 +202,17 @@ export default function CollectionPage() {
 
 
                     <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger className="">Mint Details</AccordionTrigger>
+                        <AccordionItem value="item-1" className="border-tersioary border rounded-[20px]">
+                            <AccordionTrigger className="">
+                                Mint Details
+                            </AccordionTrigger>
                             <AccordionContent className="">
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                <p> <span>Chain:</span> Ethereum. <br />
+                                    <span>Price:</span> TBA. Cheaper for whitelisted members, getting more expensive in stages.<br />
+                                    <span>First </span>Collection: RoboMetaMorphs by Hagen PietschCollection<br />
+                                    <span>Size: </span>Up to 2,000 depending on demand, ensuring sellout is achieved.<br />
+                                    <span>Mint location:</span> Join our Discord and Twitter for updates!<br />
+                                </p>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
