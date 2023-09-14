@@ -160,11 +160,11 @@ export default function CollectionPage() {
                     <h1 className="text-[42px] font-extrabold text-secondary">
                         INVESTORS & PARTNERS
                     </h1>
-                    <div className="mt-10 border border-tersioary rounded-[20px] max-w-[800px] w-full grid grid-cols-4">
+                    <div className="mt-10 border border-tersioary rounded-[20px] max-w-[800px] w-full grid grid-cols-2 md:grid-cols-4">
                         <div className="flex items-center justify-center h-[126px] border-r border-b border-tersioary ">
                             <img src="/icons/moonlanding.svg" width={119} height={52} className="w-auto object-contain h-[52px]" />
                         </div>
-                        <div className="flex items-center justify-center h-[126px] border-r border-b border-tersioary">
+                        <div className="flex items-center justify-center h-[126px] md:border-r border-b border-tersioary">
                             <img src="/icons/defilink.svg" width={75} height={56} className="w-auto object-contain h-[56px]" />
                         </div>
                         <div className="flex items-center justify-center h-[126px] border-r border-b border-tersioary">
@@ -178,10 +178,10 @@ export default function CollectionPage() {
                                 foundation
                             </p>
                         </div>
-                        <div className="flex items-center justify-center h-[126px] border-r border-tersioary">
+                        <div className="flex items-center justify-center h-[126px] border-r border-b md:border-b-0  border-tersioary">
                             <img src="/icons/eth2.svg" width={133} height={40} className="w-auto object-contain h-[40px]" />
                         </div>
-                        <div className="flex items-center justify-center h-[126px] border-r border-tersioary">
+                        <div className="flex items-center justify-center h-[126px] border-b md:border-r md:border-b-0 border-tersioary">
                             <img src="/icons/opensea.svg" width={113} height={26} className="w-auto object-contain h-[26px]" />
                         </div>
                         <div className="flex items-center justify-center h-[126px] border-r border-tersioary">
