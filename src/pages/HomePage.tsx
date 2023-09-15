@@ -16,7 +16,7 @@ export default function Homepage() {
                         </p>
                         <div className='pt-[30px] lg:block'>
                             <PrimaryButton className=" px-[74px] py-[18px]">
-                                Email
+                                <a href="mailto:info@kraut9.io">Email</a>
                             </PrimaryButton>
                         </div>
                     </div>
@@ -123,8 +123,8 @@ export default function Homepage() {
                             Our Mission
                         </h1>
                         <div className="py-11 md:flex hidden">
-                            <PrimaryButton className=" px-[74px] py-[18px]">
-                                Email
+                            <PrimaryButton className="px-[74px] py-[18px]">
+                                <a href="mailto:info@kraut9.io">Email</a>
                             </PrimaryButton>
                         </div>
                     </div>

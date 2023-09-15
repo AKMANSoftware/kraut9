@@ -39,15 +39,15 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="flex md:gap-x-3 justify-evenly md:py-0 py-10">
-                    <SecondaryButton className="">
+                    {/* <SecondaryButton className="">
                         <img src="/images/facebooklogo.svg" className="px-[5px]" />
-                    </SecondaryButton>
+                    </SecondaryButton> */}
                     <SecondaryButton className="">
-                        <img src="/images/twitterlogo.svg" className="" alt="" />
+                       <a href="https://twitter.com/?lang=en"><img src="/images/twitterlogo.svg" className="p-1" alt="" /></a> 
                     </SecondaryButton>
-                    <SecondaryButton className="">
+                    {/* <SecondaryButton className="">
                         <img src="/images/instalogo.svg" className="" alt="" />
-                    </SecondaryButton>
+                    </SecondaryButton> */}
                 </div>
                 <div className="md:flex hidden text-black font-normal text-base gap-x-10 items-center pr-14">
                     <a
