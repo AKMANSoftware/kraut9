@@ -23,8 +23,8 @@ export default function UseCasesPage() {
                 {/* Use of Nftpostcomponent */}
                 <div className="md:space-y-[30px] space-y-5 md:py-6 py-5">
                     <UseCaseComponent
-                        className="h-[300px]"
-                        srcLarge={'/images/carshowroom.svg'} 
+                        className=""
+                        srcLarge={'/images/carshowroom.png'} 
                         srcSmall={'/images/carshowroomm.png'} 
                         heading="Leveraging NFT-based Royalty Programs for an Automotive Aftermarket Parts Manufacturer"
                         content=""
