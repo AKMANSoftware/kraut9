@@ -88,26 +88,26 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="space-x-3">
-                    <a href="/privacy">
+                    <a href="/#">
                         Privacy Policy
                     </a>
                     <span>
                         •
                     </span>
-                    <a href="/terms">
+                    <a href="/#">
                         Terms
                     </a>
                 </div>
             </div>
             <div className="flex flex-col items-center  md:hidden  text-halfSecondary py-16 gap-y-5">
                 <div className="space-x-3">
-                    <a href="/privacy">
+                    <a href="/#">
                         Privacy Policy
                     </a>
                     <span>
                         •
                     </span>
-                    <a href="/terms">
+                    <a href="/#">
                         Terms
                     </a>
                 </div>
