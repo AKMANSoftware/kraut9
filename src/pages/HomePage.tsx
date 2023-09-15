@@ -15,9 +15,11 @@ export default function Homepage() {
                             leading the way in revolutionizing marketing with NFTs
                         </p>
                         <div className='pt-[30px] lg:block'>
-                            <PrimaryButton className=" px-[74px] py-[18px]">
-                                <a href="mailto:info@kraut9.io">Email</a>
-                            </PrimaryButton>
+                            <a href="mailto:info@kraut9.io">
+                                <PrimaryButton className=" px-[74px] py-[18px]">
+                                    Email
+                                </PrimaryButton>
+                            </a>
                         </div>
                     </div>
                     <div className='flex justify-center w-full md:w-auto py-12  lg:py-0'>
@@ -123,9 +125,11 @@ export default function Homepage() {
                             Our Mission
                         </h1>
                         <div className="py-11 md:flex hidden">
-                            <PrimaryButton className="px-[74px] py-[18px]">
-                                <a href="mailto:info@kraut9.io">Email</a>
-                            </PrimaryButton>
+                            <a href="mailto:info@kraut9.io">
+                                <PrimaryButton className="px-[74px] py-[18px]">
+                                    Email
+                                </PrimaryButton>
+                            </a>
                         </div>
                     </div>
                     <div className="md:w-1/2 font-inter md:py-0 py-[10px] ">

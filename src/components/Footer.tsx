@@ -42,9 +42,11 @@ export default function Footer() {
                     {/* <SecondaryButton className="">
                         <img src="/images/facebooklogo.svg" className="px-[5px]" />
                     </SecondaryButton> */}
-                    <SecondaryButton className="">
-                       <a href="https://twitter.com/?lang=en"><img src="/images/twitterlogo.svg" className="p-1" alt="" /></a> 
-                    </SecondaryButton>
+                    <a href="https://twitter.com/?lang=en">
+                        <SecondaryButton className="">
+                            <img src="/images/twitterlogo.svg" className="p-1" alt="" />
+                        </SecondaryButton>
+                    </a>
                     {/* <SecondaryButton className="">
                         <img src="/images/instalogo.svg" className="" alt="" />
                     </SecondaryButton> */}
