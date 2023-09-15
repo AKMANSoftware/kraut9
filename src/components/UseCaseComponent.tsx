@@ -17,7 +17,7 @@ export default function UseCaseComponent({ heading, content, button, srcLarge, s
     return (
         <div
             className={cn(
-                "flex md:flex-row flex-col gap-x-7 rounded-[40px] overflow-hidden h-[300px] md:h-[300px] border border-tersioary ",
+                "flex md:flex-row flex-col gap-x-7 rounded-[40px] overflow-hidden  md:h-[300px] border border-tersioary ",
                 className
             )}
         >
@@ -37,7 +37,7 @@ export default function UseCaseComponent({ heading, content, button, srcLarge, s
             </div>
             <div
                 className={cn(
-                    "md:py-10 p-5 flex flex-col justify-between md:w-full h-[300px]",
+                    "md:py-10 p-5 flex flex-col justify-between md:w-full md:h-[300px]",
                     className
                 )}
             >
