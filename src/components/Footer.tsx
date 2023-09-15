@@ -38,7 +38,7 @@ export default function Footer() {
                         Team
                     </a>
                 </div>
-                <div className="flex md:gap-x-3 justify-evenly md:py-0 py-10">
+                <div className="flex md:gap-x-3 md:justify-start justify-center md:py-0 py-10 md:w-[190px]">
                     {/* <SecondaryButton className="">
                         <img src="/images/facebooklogo.svg" className="px-[5px]" />
                     </SecondaryButton> */}
@@ -81,13 +81,13 @@ export default function Footer() {
                     </PrimaryButton>
                 </div>
             </div>
-            <div className="md:flex hidden justify-between text-halfSecondary py-16">
+            <div className="md:flex hidden justify-center text-halfSecondary py-16">
                 <div>
                     <a href="">
                         © 2023 – Kraut9 – All Rights Reserved
                     </a>
                 </div>
-                <div className="space-x-3">
+                {/* <div className="space-x-3">
                     <a href="/#">
                         Privacy Policy
                     </a>
@@ -97,10 +97,10 @@ export default function Footer() {
                     <a href="/#">
                         Terms
                     </a>
-                </div>
+                </div> */}
             </div>
             <div className="flex flex-col items-center  md:hidden  text-halfSecondary py-16 gap-y-5">
-                <div className="space-x-3">
+                {/* <div className="space-x-3">
                     <a href="/#">
                         Privacy Policy
                     </a>
@@ -110,7 +110,7 @@ export default function Footer() {
                     <a href="/#">
                         Terms
                     </a>
-                </div>
+                </div> */}
                 <div>
                     <a href="">
                         © 2023 – Kraut9 – All Rights Reserved
